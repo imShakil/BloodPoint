@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.BankInfo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dbinfo">
+
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:background="@color/primary_dark"
+                android:id="@+id/ttusers"
+                android:gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Total Users: " />
+            <TextView
+                android:layout_alignBottom="@+id/ttusers"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/ttusers"
+                android:id="@+id/TotalUsers"
+                android:paddingLeft="10dp"
+                android:gravity="start|center"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2345" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/ttdonors"
+                android:gravity="center"
+                android:background="@color/primary_dark"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Total Donors: " />
+            <TextView
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/ttdonors"
+                android:layout_toEndOf="@+id/ttdonors"
+                android:id="@+id/TotalDonors"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:gravity="start|center"
+                android:text="1685" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:id="@+id/SL"
+        android:layout_below="@id/dbinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:layout_toEndOf="@id/btngetDivison"
+            android:gravity="center"
+            android:text="Donors In District"
+            android:id="@+id/btnSearch"
+            android:background="@color/primary_dark"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:layout_alignParentTop="true"
+            android:layout_alignBottom="@+id/btnSearch"
+            android:id="@+id/btngetDivison"
+            android:background="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/district_list"
+            android:padding="10dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/DonorsInfo"
+        android:layout_below="@+id/SL"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/logo1"
+                android:background="@color/primary_dark"
+                android:text="A+ Donors"
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/type1"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/logo1"
+                android:layout_toEndOf="@+id/logo1"
+                android:gravity="start|center"
+                android:text=" 345 Donors"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/logo2"
+                android:background="@color/primary_dark"
+                android:text="A- Donors"
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/type2"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/logo2"
+                android:layout_toEndOf="@+id/logo2"
+                android:gravity="start|center"
+                android:text=" 345 Donors"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/logo3"
+                android:background="@color/primary_dark"
+                android:text="B+ Donors"
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/type3"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/logo3"
+                android:layout_toEndOf="@+id/logo3"
+                android:gravity="start|center"
+                android:text=" 345 Donors"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/logo5"
+                android:background="@color/primary_dark"
+                android:text="B- Donors"
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/type4"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/logo5"
+                android:layout_toEndOf="@+id/logo5"
+                android:gravity="start|center"
+                android:text=" 345 Donors"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/logo6"
+                android:background="@color/primary_dark"
+                android:text="AB+ Donors"
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/type5"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/logo6"
+                android:layout_toEndOf="@+id/logo6"
+                android:gravity="start|center"
+                android:text=" 345 Donors"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/logo7"
+                android:background="@color/primary_dark"
+                android:text="AB- Donors"
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/type6"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/logo7"
+                android:layout_toEndOf="@+id/logo7"
+                android:gravity="start|center"
+                android:text=" 345 Donors"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/logo8"
+                android:background="@color/primary_dark"
+                android:text="O+ Donors"
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/type7"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/logo8"
+                android:layout_toEndOf="@+id/logo8"
+                android:gravity="start|center"
+                android:text=" 345 Donors"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/logo9"
+                android:background="@color/primary_dark"
+                android:text="O- Donors"
+                android:layout_width="100dp"
+                android:padding="5dp"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/type8"
+                android:layout_alignParentTop="true"
+                android:layout_alignBottom="@+id/logo9"
+                android:layout_toEndOf="@+id/logo9"
+                android:gravity="start|center"
+                android:text=" 345 Donors"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

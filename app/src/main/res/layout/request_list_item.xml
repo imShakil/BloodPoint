@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/red_button_bg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/border"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/img_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circle"
+                    android:contentDescription="@string/nav_header_desc"
+                    android:src="@mipmap/blood_bank_ic_launcher_foreground" />
+                <TextView
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:id="@+id/userName"
+                    android:layout_toEndOf="@+id/img_logo"
+                    android:text="@string/app_name"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:paddingStart="10dp"
+                    android:paddingEnd="0dp"
+                    android:layout_toEndOf="@+id/img_logo"
+                    android:layout_below="@+id/userName"
+                    android:id="@+id/posted"
+                    android:textSize="16sp"
+                    android:text="11:30 PM, 17/10/2018"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/bg"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/img_logo"
+                    android:text="Looking For: "
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_toEndOf="@+id/bg"
+                    android:layout_alignBottom="@+id/bg"
+                    android:id="@+id/targetBG"
+                    android:layout_alignStart="@+id/showMessage"
+                    android:layout_alignBaseline="@+id/bg"
+                    android:text="AB+ Blood Donor"
+                    android:textSize="16sp"
+                    android:layout_below="@id/img_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@id/targetBG"
+                    android:id="@+id/ptb"
+                    android:textSize="18sp"
+                    android:textAlignment="inherit"
+                    android:text="About Patient: "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toEndOf="@+id/ptb"
+                    android:layout_alignBaseline="@+id/ptb"
+                    android:layout_below="@+id/targetBG"
+                    android:text="@string/info_"
+                    android:justificationMode="inter_word"
+                    android:id="@+id/showMessage"
+                    android:textSize="16sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:id="@+id/divide"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/showMessage"
+                    android:background="@color/primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/divide"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_weight=".5"
+                        android:gravity="left|bottom"
+                        android:id="@+id/rlt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+                        <ImageView
+                            android:paddingRight="5dp"
+                            android:id="@+id/loc_logo"
+                            android:src="@drawable/ic_location_on"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+                        <TextView
+                            android:layout_toEndOf="@id/loc_logo"
+                            android:layout_alignParentTop="true"
+                            android:gravity="start|center"
+                            android:layout_alignBottom="@id/loc_logo"
+                            android:id="@+id/reqstLocation"
+                            android:text="Mirzapur, Tangail, Dhaka"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:gravity="end|bottom"
+                        android:layout_weight=".5"
+                        android:id="@+id/rlt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:paddingRight="10dp"
+                            android:id="@+id/call_logo"
+                            android:src="@drawable/ic_phone_call"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+
+                        <TextView
+                            android:layout_toEndOf="@id/call_logo"
+                            android:layout_alignParentTop="true"
+                            android:gravity="end|center"
+                            android:layout_alignBottom="@id/call_logo"
+                            android:id="@+id/targetCN"
+                            android:text="+8801234567890"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "703279334507",
+    "firebase_url": "https://blood-point-app.firebaseio.com",
+    "project_id": "blood-point-app",
+    "storage_bucket": "blood-point-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703279334507:android:39687adf3bfa29bec69d2e",
+        "android_client_info": {
+          "package_name": "com.android.iunoob.bloodpoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703279334507-pi2eo19mpf0i34k6c0pkvo1p2jrs04db.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.iunoob.bloodpoint",
+            "certificate_hash": "e46ae0f181c734c2622ea3973853b327409a07a0"
+          }
+        },
+        {
+          "client_id": "703279334507-n6phf7p7pcvorvd8qvsg0ufkj0su2i0v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi9dePlbvr36Pekbqekk8bfLOMP4gWh0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703279334507-n6phf7p7pcvorvd8qvsg0ufkj0su2i0v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

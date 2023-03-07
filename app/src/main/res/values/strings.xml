@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name" translatable="false">Blood Point</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="achiev">Achievements</string>
+
+    <!-- Strings related to login -->
+    <string name="signup">Register</string>
+    <string name="prompt_email">Email</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="reset">Reset</string>
+    <string name="mobile">Mobile No</string>
+    <string name="userAddress">Address</string>
+    <string name="nearH">Find nearest Hospitals</string>
+    <string name="fndBlood">Find Blood Donor</string>
+    <string name="lgout">Log out</string>
+    <string name="devinfo">Developer Info</string>
+    <string name="bloodinfo">Blood Info</string>
+    <string name="dbinfo">Blood Bank Info</string>
+
+    <string-array name="district_list">
+        <item>Bagherhat</item>
+        <item>Bandarban</item>
+        <item>Barguna</item>
+        <item>Barishal</item>
+        <item>Bhola</item>
+        <item>Bogura</item>
+        <item>Brahmanbaria</item>
+        <item>Chandpur</item>
+        <item>Chapainawabganj</item>
+        <item>Chattogram</item>
+        <item>Chuadanga</item>
+        <item>Coxs Bazar</item>
+        <item>Cumilla</item>
+        <item>Dhaka</item>
+        <item>Dinajpur</item>
+        <item>Faridpur</item>
+        <item>Feni</item>
+        <item>Gaibandha</item>
+        <item>Gazipur</item>
+        <item>Gopalganj</item>
+        <item>Habiganj</item>
+        <item>Jamalpur</item>
+        <item>Jeshore</item>
+        <item>Jhalokati</item>
+        <item>Jhenaidah</item>
+        <item>Joypurhat</item>
+        <item>Khagrachhari</item>
+        <item>Khulna</item>
+        <item>Kishoreganj</item>
+        <item>Kurigram</item>
+        <item>Kushtia</item>
+        <item>Lakshmipur</item>
+        <item>Lalmonirhat</item>
+        <item>Madaripur</item>
+        <item>Magura</item>
+        <item>Manikganj</item>
+        <item>Maymensingh</item>
+        <item>Meherpur</item>
+        <item>Moulvibazar</item>
+        <item>Munshiganj</item>
+        <item>Naogaon</item>
+        <item>Narail</item>
+        <item>Naraynganj</item>
+        <item>Narsingdi</item>
+        <item>Natore</item>
+        <item>Netrokona</item>
+        <item>Nilphamari</item>
+        <item>Noakhali</item>
+        <item>Pabna</item>
+        <item>Panchagarh</item>
+        <item>Patuakhali</item>
+        <item>Pirojpur</item>
+        <item>Rajbari</item>
+        <item>Rajshahi</item>
+        <item>Rangamati</item>
+        <item>Rangpur</item>
+        <item>Sathkhira</item>
+        <item>Shariatpur</item>
+        <item>Sherpur</item>
+        <item>Sirajganj</item>
+        <item>Sunamganj</item>
+        <item>Sylhet</item>
+        <item>Tangail</item>
+        <item>Thakurgaon</item>
+
+    </string-array>
+
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+    <array name="Blood_Group">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </array>
+
+    <string name="eligibility_">Eligibility Requirements</string>
+    <string name="female_">If you are female, you must:\n Be healthy and feeling well\nBe at least 17 years old in most states\nBe at least 5 ft 5 inch\nWeigh at least 150 lbs.</string>
+    <string name="male_">If you are male, you must:\nBe healthy and feeling well\nBe at least 17 years old in most states\nBe at least 5 ft 1 inch \nWeigh at least 130 lbs.\n</string>
+    <string name="info_">Giving blood saves lives. The blood you give is a lifeline in an emergency and for people who need long-term treatments. Many people would not be alive today if donors had not generously given their blood. \n\nWhy we need you to give blood?\n\n We need over 6000 blood donations every day to treat patients in need for people to give blood.\n\nEach year we need approximately 200000 new donors, as some donors can no longer give blood.Most people between ages of 17-65 are able to give blood. Around half our current donors are over 45.That is why we need more young people to start giving blood.</string>
+    <string name="aboutus">This application is developed under academic purpose. It will be further developed with more features.\n
+        Developed by: Mobarak Hosen Shakil \n
+        Contact at: mh.ice.iu@gmail.com \n
+        Visit for latest version: https://github.com/imshakil/BloodBank/release \n
+    </string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="enter_birth_date">Select Birth Date</string>
+    <string name="mark_this_to_be_a_donor">Mark this to be a donor</string>
+    <string name="app_quote">Donate Blood, Save Life</string>
+    <string name="find_hospital">Find Hospital</string>
+    <string name="find_list_of_donors">Find List of Donors</string>
+    <string name="submit_request">Submit Request</string>
+
+
+</resources>
